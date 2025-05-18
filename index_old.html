@@ -70,117 +70,161 @@
                     <div class="squareDL"></div>
                 </section>
 
+                <!-- secondSlide template -->
+                <section data-transition="fade-in fade-out" class="secondSlide">
+                    <div class="secondSlide-qr" style="margin: 0">
+                        <img
+                            style="
+                                width: 35%;
+                                border: 2px solid black;
+                                border-radius: 20px;
+                            "
+                            src="assets/img/qr-example.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="secondSlide-url">
+                        <p
+                            style="
+                                font-family: monospace;
+                                font-size: 20pt;
+                                line-height: 0em;
+                            "
+                        >
+                            https://username.github.io/repository
+                        </p>
+                    </div>
+                </section>
+
+                <!-- imgLtextR template -->
+                <section class="imgLtextR">
+                    <div class="slide-title">
+                        <h3>imgLtextR template</h3>
+                        <h4>Subtitle</h4>
+                    </div>
+                    <div class="slide-content">
+                        <div class="imgL-wrapper">
+                            <div>
+                                <img src="assets/img/example.jpg" alt="Image" />
+                            </div>
+                        </div>
+                        <div class="textR-wrapper">
+                            <div>
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- imgRtextL template -->
+                <section class="imgRtextL">
+                    <div class="slide-title">
+                        <h3>imgRtextL template</h3>
+                        <h4>Subtitle</h4>
+                    </div>
+                    <div class="slide-content">
+                        <div class="textL-wrapper">
+                            <div>
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="imgR-wrapper">
+                            <div>
+                                <img src="assets/img/example.jpg" alt="Image" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- markdown slide area -->
+                <section data-markdown>
+                    <textarea data-template>
+						## Markdown (1)
+						Slide written in markdown
+						---
+						## Markdown  (2)
+						Another slide written in markdown
+					</textarea
+                    >
+                </section>
                 <section>
-                    <section><h2>Introduzione</h2></section>
-                    <section>
-                      <ul>
-                        <li>La "nuova musica" come esperienza, non etichetta</li>
-                        <li>Ascolto, immaginazione, critica</li>
-                        <li>Una musica che ridefinisce il suono stesso</li>
-                      </ul>
+                    <h2 class="r-fit-text">BIG</h2>
+                </section>
+
+                <!-- Mermaid usage -->
+                <section>
+                    <div class="mermaid">
+                        <pre>
+							mindmap
+								root((mindmap))
+									Origins
+										Long history
+										Popularisation
+											British popular psychology author Tony Buzan
+									Research
+										On effectiveness<br/>and features
+										On Automatic creation
+											Uses
+												Creative techniques
+												Strategic planning
+												Argument mapping
+									Tools
+										Pen and paper
+										Mermaid
+						</pre>
+                    </div>
+                </section>
+
+                <!-- bibliography section -->
+
+                <section class="headerSlide">
+                    <section class="sectionHeaderSlide">
+                        <h2>Bibliography</h2>
+                        <div class="downArrow bounce">
+                            <img width="40" height="40" alt=""
+                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                        </div>
                     </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>Contesto storico: crisi della forma</h2></section>
-                    <section>
-                      <ul>
-                        <li>Mahler, Debussy, Strauss: oltre la tonalità</li>
-                        <li>Rottura delle forme tradizionali</li>
-                        <li>Espressività e tensione come motore del cambiamento</li>
-                      </ul>
+                    <!-- modify the file assets/bibliography.bib -->
+                    <section class="bibContent">
+                        <div class="bibWrapper">
+                            <div class="bibtex_template bibItem">
+                                <div class="if author">
+                                    <span class="if year">
+                                        <span class="year"></span>
+                                    </span>
+                                    <span class="author" conjunction=" and"><span class="last"></span> <span class="first"></span></span>
+                                </div>
+                                <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
+                                    <span class="title"></span>
+                                </div>
+                                <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
+                                    «<span class="journal"></span>»
+                                </div>
+                                <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
+                                    <span class="publisher"></span>
+                                </div>
+                                <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                    <b>ISBN</b>: <span class="isbn"></span>
+                                </div>
+                                <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                    <b>ISSN</b>: <span class="isbn"></span>
+                                </div>
+                                <span class="if url" style="margin-left: 10px; margin-top: 10px;">
+                                    <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
+                                </span>
+                                <div class="if note" style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
+                                    <span class="note"></span>
+                                </div>
+                            </div>
+                            <div id="bibtex_display"></div>
+                        </div>
                     </section>
-                    <section>
-                      <h3>Ascolti consigliati</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/U_t4ZC4L1S4" title="Mahler - Sinfonia n.9"></iframe>
-                      <p><small>Mahler – Sinfonia n.9, I mov.</small></p>
-                    </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>Seconda Scuola di Vienna</h2></section>
-                    <section>
-                      <ul>
-                        <li>Schoenberg: il metodo dei 12 suoni</li>
-                        <li>Webern: essenzialità e frammento</li>
-                        <li>Berg: dramma e lirismo</li>
-                      </ul>
-                    </section>
-                    <section>
-                      <h3>Ascolto consigliato</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/gdtjF-FJChw" title="Webern - Sinfonia op.21"></iframe>
-                      <p><small>Webern – Sinfonia op. 21</small></p>
-                    </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>Dopo la guerra</h2></section>
-                    <section>
-                      <ul>
-                        <li>Serialismo integrale: Boulez, Stockhausen</li>
-                        <li>Indeterminazione: John Cage</li>
-                        <li>Il silenzio come gesto musicale</li>
-                      </ul>
-                    </section>
-                    <section>
-                      <h3>Boulez – Structures</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/dRa2N1vJMBs" title="Boulez – Structures"></iframe>
-                    </section>
-                    <section>
-                      <h3>Cage – 4’33”</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JTEFKFiXSx4" title="Cage – 4'33''"></iframe>
-                    </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>L’elettronica musicale</h2></section>
-                    <section>
-                      <ul>
-                        <li>Musica concreta (Schaeffer)</li>
-                        <li>Musica elettronica (Stockhausen)</li>
-                        <li>Nuove tecnologie = nuovo linguaggio</li>
-                      </ul>
-                    </section>
-                    <section>
-                      <h3>Schaeffer – Étude aux chemins de fer</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/K9bPp3ObCxw" title="Schaeffer – Étude"></iframe>
-                    </section>
-                    <section>
-                      <h3>Berio – Visage</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/3C-Q-uJH4n8" title="Berio – Visage"></iframe>
-                    </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>Pluralismo e postmodernità</h2></section>
-                    <section>
-                      <ul>
-                        <li>Spettralismo: suono come materia fisica</li>
-                        <li>Minimalismo: processi e ripetizione</li>
-                        <li>Postmodernismo: ibridazione, frammento</li>
-                      </ul>
-                    </section>
-                    <section>
-                      <h3>Grisey – Partiels</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JW4_7gx1YtE" title="Grisey – Partiels"></iframe>
-                    </section>
-                    <section>
-                      <h3>Reich – Music for 18 Musicians</h3>
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXJWO2FQ16c" title="Reich – Music for 18 Musicians"></iframe>
-                    </section>
-                  </section>
-            
-                  <section>
-                    <section><h2>Spunti di riflessione</h2></section>
-                    <section>
-                      <ul>
-                        <li>Che ruolo ha il silenzio nella musica?</li>
-                        <li>È possibile ascoltare 4’33” come un vero brano?</li>
-                        <li>Se tutto è suono, cosa distingue la musica?</li>
-                        <li>Che senso ha oggi parlare di "contemporaneo"?</li>
-                      </ul>
-                    </section>
-                  </section>
+                </section>
 
                 <!-- endSlide template -->
                 <section
