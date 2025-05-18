@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Slides-Revealjs-Template</title>
+        <meta name="description" content="Slides-Revealjs-Template" />
+        <meta name="author" content="Name Surname" />
+
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+
+        <link rel="stylesheet" href="dist/reset.css" />
+        <link rel="stylesheet" href="dist/reveal.css" />
+        <link rel="stylesheet" href="dist/theme/consba-custom.css" />
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    </head>
+
+    <body>
+        <!-- nav -->
+
+        <div class="nav-wrapper" id="nav-wrapper">
+            <div class="nav-content-wrapper">
+                <div class="nav-logo-wrapper">
+                    <img src="assets/img/consba-logo.svg" alt="" />
+                </div>
+                <div class="nav-info-wrapper">
+                    <p>Name Surname</p>
+                    <div class="nav-title">Title: Subtitle</div>
+                    <p class="nav-description">Description</p>
+                </div>
+                <div class="nav-clock-wrapper" id="nav-clock-wrapper">
+                    <p class="nav-clock-hour" id="nav-clock-hour"></p>
+                    <p class="nav-clock-date" id="nav-clock-date"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- slides -->
+
+        <div class="reveal">
+            <div class="slides">
+                <!-- Fancy templates -->
+
+                <!-- firstSlide template -->
+                <section
+                    data-state="start"
+                    data-transition="fade-out"
+                    class="firstSlide"
+                >
+                    <div class="squareUR"></div>
+                    <div class="slide-title">
+                        <div class="slide-title-info">
+                            <h3>Author(s)</h3>
+                            <h1>Title</h1>
+                            <h2>Subtitle</h2>
+                            <h4>Year</h4>
+                        </div>
+                        <p class="slide-title-hl"></p>
+                        <div class="slide-title-logo-wrapper">
+                            <img src="assets/img/consba-logo.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="squareDL"></div>
+                </section>
+
+                <!-- secondSlide template -->
+                <section data-transition="fade-in fade-out" class="secondSlide">
+                    <div class="secondSlide-qr" style="margin: 0">
+                        <img
+                            style="
+                                width: 35%;
+                                border: 2px solid black;
+                                border-radius: 20px;
+                            "
+                            src="assets/img/qr-example.svg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="secondSlide-url">
+                        <p
+                            style="
+                                font-family: monospace;
+                                font-size: 20pt;
+                                line-height: 0em;
+                            "
+                        >
+                            https://username.github.io/repository
+                        </p>
+                    </div>
+                </section>
+
+                <!-- imgLtextR template -->
+                <section class="imgLtextR">
+                    <div class="slide-title">
+                        <h3>imgLtextR template</h3>
+                        <h4>Subtitle</h4>
+                    </div>
+                    <div class="slide-content">
+                        <div class="imgL-wrapper">
+                            <div>
+                                <img src="assets/img/example.jpg" alt="Image" />
+                            </div>
+                        </div>
+                        <div class="textR-wrapper">
+                            <div>
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- imgRtextL template -->
+                <section class="imgRtextL">
+                    <div class="slide-title">
+                        <h3>imgRtextL template</h3>
+                        <h4>Subtitle</h4>
+                    </div>
+                    <div class="slide-content">
+                        <div class="textL-wrapper">
+                            <div>
+                                <p>Text</p>
+                                <p>Text</p>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="imgR-wrapper">
+                            <div>
+                                <img src="assets/img/example.jpg" alt="Image" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- markdown slide area -->
+                <section data-markdown>
+                    <textarea data-template>
+						## Markdown (1)
+						Slide written in markdown
+						---
+						## Markdown  (2)
+						Another slide written in markdown
+					</textarea
+                    >
+                </section>
+                <section>
+                    <h2 class="r-fit-text">BIG</h2>
+                </section>
+
+                <!-- Mermaid usage -->
+                <section>
+                    <div class="mermaid">
+                        <pre>
+							mindmap
+								root((mindmap))
+									Origins
+										Long history
+										Popularisation
+											British popular psychology author Tony Buzan
+									Research
+										On effectiveness<br/>and features
+										On Automatic creation
+											Uses
+												Creative techniques
+												Strategic planning
+												Argument mapping
+									Tools
+										Pen and paper
+										Mermaid
+						</pre>
+                    </div>
+                </section>
+
+                <!-- bibliography section -->
+
+                <section class="headerSlide">
+                    <section class="sectionHeaderSlide">
+                        <h2>Bibliography</h2>
+                        <div class="downArrow bounce">
+                            <img width="40" height="40" alt=""
+                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+                        </div>
+                    </section>
+                    <!-- modify the file assets/bibliography.bib -->
+                    <section class="bibContent">
+                        <div class="bibWrapper">
+                            <div class="bibtex_template bibItem">
+                                <div class="if author">
+                                    <span class="if year">
+                                        <span class="year"></span>
+                                    </span>
+                                    <span class="author" conjunction=" and"><span class="last"></span> <span class="first"></span></span>
+                                </div>
+                                <div style="margin-left: 10px; margin-bottom:5px; margin-top:5px; font-style: italic;">
+                                    <span class="title"></span>
+                                </div>
+                                <div class="if journal" style="margin-left: 5px; margin-bottom:5px;">
+                                    «<span class="journal"></span>»
+                                </div>
+                                <div class="if publisher" style="margin-left: 5px; font-size: 0.8em; margin-bottom: 5px;">
+                                    <span class="publisher"></span>
+                                </div>
+                                <div class="if isbn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                    <b>ISBN</b>: <span class="isbn"></span>
+                                </div>
+                                <div class="if issn" style="margin-left: 10px; font-weight: 300;font-size: 0.8em;">
+                                    <b>ISSN</b>: <span class="isbn"></span>
+                                </div>
+                                <span class="if url" style="margin-left: 10px; margin-top: 10px;">
+                                    <a class="url" style="font-size:0.75em" target="_blank">(view online)</a>
+                                </span>
+                                <div class="if note" style="margin-left: 10px; font-weight: 300;font-size: 0.8em; font-style: italic;">
+                                    <span class="note"></span>
+                                </div>
+                            </div>
+                            <div id="bibtex_display"></div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- endSlide template -->
+                <section
+                    data-state="start"
+                    data-background-color="rgb(0 97 165)"
+                    data-transition-speed="slow"
+                    data-transition="fade-in"
+                    class="endSlide" id="thankyou">
+                    <div class="thankyou-wrapper">
+                        <h2>THANK YOU</h2>
+                        <p class="slide-title-hl"></p>
+                    </div>
+                    <div class="authorship-wrapper">
+
+                        <div class="author-wrapper">
+                            <div class="author-left">
+                                <div class="author-img"><img src="assets/img/auth-sample-1.jpg" alt=""></div>
+                                <div class="author-info">
+                                    <p class="author-name">Name Surname</p>
+                                    <p class="author-curr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc. Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit. Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus nibh sit amet sem.
+                                    </p>
+                                    <div class="contacts">
+                                        <p>https://www.example.com/</p>
+                                        <p>Contact 2</p>
+                                        <p>Contact 3</p>
+                                        <!-- add more contact -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author-wrapper">
+                            <div class="author-right">
+                                <div class="author-info">
+                                    <p class="author-name">Name Surname</p>
+                                    <p class="author-curr">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus urna orci, bibendum at sem ac, blandit malesuada tortor. Quisque nec felis in quam ullamcorper laoreet at dapibus ipsum. Curabitur in sapien vitae libero iaculis blandit quis in nunc. Proin gravida, nulla sit amet pulvinar fringilla, dolor odio fringilla metus, eget porta quam erat at augue. Vivamus fermentum finibus odio. Proin quis nibh sed lacus ornare rhoncus. Praesent nisl nunc, interdum quis molestie vel, tempor et velit. Etiam interdum, sapien id faucibus egestas, eros massa ornare ipsum, in tempus purus nibh sit amet sem.
+                                    </p>
+                                    <div class="contacts">
+                                        <p>https://www.example.com/</p>
+                                        <p>Contact 2</p>
+                                        <p>Contact 3</p>
+                                        <!-- add more contact -->
+                                    </div>
+                                </div>
+                                <div class="author-img"><img src="assets/img/auth-sample-2.jpg" alt=""></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- reveal.js plugins -->
+
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
+        <script src="plugin/mermaid/mermaid.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                width: 1280,
+                height: 720,
+                controls: true,
+                progress: true,
+                center: true,
+                hash: true,
+                scrollActivationWidth: null,
+                slideNumber: "h.v",
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealZoom,
+                    RevealMermaid,
+                ],
+            });
+        </script>
+
+        <!-- clock -->
+        <script src="assets/js/clock.js"></script>
+        <!-- bibtexjs -->
+        <script type="text/javascript" src="assets/js/bibtex_js.min.js"></script>
+        <bibtex src="assets/bibliography.bib"></bibtex>
+    </body>
+</html>
